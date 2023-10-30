@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tandartspraktijk Kieskeurig</title>
+    </head>
+    <body>
+        <h1>Tandartsafspraak</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras adipiscing enim eu turpis. Est ultricies integer quis auctor. Arcu dui vivamus arcu felis bibendum<br> ut tristique et. Quis ipsum suspendisse ultrices gravida dictum fusce. Augue eget arcu dictum varius. Malesuada proin libero nunc consequat. A erat nam at lectus urna duis convallis convallis. Eu sem integer vitae justo eget. <br> Senectus et netus et malesuada fames ac turpis egestas. Posuere sollicitudin aliquam ultrices sagittis. Sagittis eu volutpat odio facilisis mauris. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Ipsum consequat <br>nisl vel pretium lectus. Proin sed libero enim sed faucibus turpis in eu. Mauris ultrices eros in cursus turpis massa tincidunt. Sit amet venenatis urna cursus.
+        </p>
+        <br>
+        <img src="afbeeldingen/gebit.jpg" alt="gebit" width="300px">
+        &emsp;
+        &emsp;
+        &emsp14;
+        <img src="afbeeldingen/tandarts.jpg" alt="tandarts" width="300px">
+        &emsp;
+        &emsp;
+        &emsp14;
+        <img src="afbeeldingen/poetsen.jpg" alt="poetsen" width="300px">
+        <br>
+        <br>
+        <form id="Contactform" action="https://formspree.io/f/mgejpoeq" method="post">
+            <fieldset>
+                <legend><b>Persoonlijke gegevens</b></legend>
+                <!--gebruik van id moet uniek zijn per label-->
+                <label for="man">Dhr.</label>
+                <input type="radio" id="man" name="geslacht" value="man" checked>
+                <label for="vrouw">Mevr.</label>
+                <input type="radio" id="vrouw" name="geslacht" value="vrouw">
+                <label for="anders">Anders</label>
+                <input type="radio" id="anders" name="geslacht" value="anders">
+                <br>
+                <br>
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" name="naam">
+                <br>
+                <br>
+                <label for="adres">Adres</label>
+                <input type="text" id="adres" name="adres">
+                <br>
+                <br>
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" name="postcode">
+                <br>
+                <br>
+                <label for="woonplaats">Woonplaats</label>
+                <input type="text" id="woonplaats" name="woonplaats">
+                <br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend><b>Beschrijving van de klachten</b></legend>
+                <input type="checkbox" id="controle" name="klachten" value="controle">
+                <label for="controle">Controle</label><br>
+                <input type="checkbox" id="kiespijn" name="klachten" value="kiespijn">
+                <label for="kiespijn">Kiespijn</label><br>
+                <input type="checkbox" id="tand eruit" name="klachten" value="tand eruit">
+                <label for="tand eruit">Tand eruit</label><br>
+                <input type="checkbox" id="tand afgebroken" name="klachten" value="tand afgebroken">
+                <label for="tand afgebroken">Tand afgebroken</label><br>
+                <input type="checkbox" id="rotte tand" name="klachten" value="rotte tand">
+                <label for="rotte tand">Rotte tand</label><br>
+                <input type="checkbox" id="gaatjes" name="klachten" value="gaatjes">
+                <label for="gaatjes">Gaatjes</label><br>
+                <input type="checkbox" id="anders" name="klachten" value="anders">
+                <label for="anders">Anders</label>
+                <label for="omschrijving">nl.</label>
+                <input type="text" id="omschrijving" name="klachten" maxlength="500"><br><br>
+                <input type="file" id="foto" name="foto" accept="jpg,png,jpeg" multiple="2">
+                <label for="foto">Stuur eventueel een foto mee</label>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend><b>Toelichting op uw klachten</b></legend>
+                <label for="toelichting">Extra informatie</label>
+                <textarea id="toelichting" name="toelichting" maxlength="1500"></textarea>
+                <br>
+                <br>
+                <label for="datum">Welke datum schikt het beste voor u?</label>
+                <input type="date" id="datum" name="datum" max="2080-12-31">
+            </fieldset>
+            <br>
+            <input type="submit" value="verzenden">
+        </form>
+    </body>
+</html>
